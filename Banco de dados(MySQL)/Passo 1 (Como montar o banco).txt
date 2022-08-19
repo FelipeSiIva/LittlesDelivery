@@ -1,0 +1,149 @@
+create database BancoProjeto;
+use BancoProjeto;
+
+create table endereco(
+idEndereco int not null auto_increment,
+logradouro varchar(45) not null,
+bairro varchar(45) not null,
+cidade varchar(45) not null,
+cep decimal(8) not null,
+primary key (idEndereco)
+);
+
+______________________________________________
+
+create table Cliente(
+idCliente int not null auto_increment,
+nome varchar(45) not null,
+cpf decimal(11) not null,
+email varchar(45) not null,
+numeroCasa varchar(25) not null,
+complemento varchar(45) not null,
+fkEndereco int not null,
+primary key (idCliente),
+foreign key (fkEndereco) references Endereco(idEndereco));
+______________________________________________
+create table Telefone(
+idTelefone int not null auto_increment,
+numero decimal not null,
+fkCliente int not null,
+DDD decimal(2) not null,
+primary key (idTelefone),
+foreign key (fkCliente) references Cliente(idCliente));
+______________________________________________
+create table Venda(
+idVenda int not null auto_increment,
+dataVenda datetime not null,
+valorTotal varchar(45) not null,
+fkCliente int not null,
+primary key (idVenda),
+foreign key (fkCliente) references Cliente(idCliente));
+______________________________________________
+create table Produto(
+idProduto int not null auto_increment,
+nome varchar(45) not null,
+valor float not null,
+primary key (idProduto));
+______________________________________________
+create table ItensVendidos(
+idItensVendidos int not null auto_increment,
+fkProduto int not null,
+fkVenda int not null,
+quantidade decimal not null,
+valor float not null,
+primary key (idItensVendidos),
+foreign key (fkProduto) references Produto(idProduto),
+foreign key (fkVenda) references Venda(idVenda));
+______________________________________________
+create table Estoque(
+idEstoque int not null auto_increment,
+nome varchar(45) not null,
+quantidade decimal not null,
+quantidadeMinima decimal not null,
+custoUnitario float not null,
+dataCompra datetime not null,
+primary key (idEstoque));
+______________________________________________
+create table ItensProdutos(
+idItensProdutos int not null auto_increment,
+fkEstoque int not null,
+fkProduto int not null,
+quantidade decimal not null,
+primary key (idItensProdutos),
+foreign key (fkEstoque) references Estoque(idEstoque),
+foreign key (fkProduto) references Produto(idProduto));
+______________________________________________
+select * from endereco;
+insert into endereco
+(logradouro,bairro,cidade,cep)
+values
+("","","",0);
+delete from endereco where idEndereco = "";
+update endereco set logradouro = "" where idEndereco = 0;
+______________________________________________
+select * from cliente;
+insert into cliente
+(nome,cpf,email,numeroCasa,complemeto,fkEndereco)
+values
+("",0,"",0,"",0);
+delete from cliente where idCliente = "";
+update cliente set nome = "" where idCliente = 0;
+______________________________________________
+select * from telefone;
+insert into telefone;
+(numero,fkCliente,DDD)
+values
+(0,0,0);
+delete from telefone where idTelefone = "";
+update telefone set numero = "" where idTelefone = 0;
+______________________________________________
+select * from venda;
+insert into venda;
+(dataVenda,valorTotal,fkCliente)
+values
+(xxxx-xx-xx,0,0);
+delete from venda where idVenda = "";
+update venda set valorTotal = "" where idVenda = 0;
+______________________________________________
+select * from produto;
+insert into produto;
+(nome,valor)
+values
+("",0);
+delete from produto where idProduto = "";
+update produto set valor = "" where idVenda = 0;
+______________________________________________
+select * from estoque;
+insert into estoque;
+(nome,quantidade,quantidadeMinima,custoUnitario,dataCompra)
+values
+("","","","",xxxx-xx-xx);
+delete from estoque where idEstoque= "";
+update estoque set custoUnitario = "" where idEstoque = 0;
+______________________________________________
+select * from ItensVendidos;
+insert into itensVendidos;
+(fkProduto,fkVenda,quantidade,valor)
+values
+("0","0","","");
+delete from itensVendidos where iditensVendidos = "";
+update itensVendidos set quantidade  = "" where idItensVendido = 0;
+______________________________________________
+select * from ItensProdutos;
+insert into itensProdutos;
+(fkEstoque,fkProduto,quantidade)
+values
+("0","0","0");
+delete from itensProdutos where idItensProdutos = "";
+update itensProdutos set quantidade  = "" where idItensProdutos = 0;
+
+
+
+
+
+
+
+
+
+
+
