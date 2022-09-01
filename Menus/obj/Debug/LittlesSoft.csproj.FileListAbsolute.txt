@@ -1,0 +1,12 @@
+C:\Users\gustavo.hcazevedo\source\repos\LittlesSoft\LittlesSoft\bin\Debug\LittlesSoft.exe.config
+C:\Users\gustavo.hcazevedo\source\repos\LittlesSoft\LittlesSoft\bin\Debug\LittlesSoft.exe
+C:\Users\gustavo.hcazevedo\source\repos\LittlesSoft\LittlesSoft\bin\Debug\LittlesSoft.pdb
+C:\Users\gustavo.hcazevedo\source\repos\LittlesSoft\LittlesSoft\obj\Debug\LittlesSoft.csproj.AssemblyReference.cache
+C:\Users\gustavo.hcazevedo\source\repos\LittlesSoft\LittlesSoft\obj\Debug\LittlesSoft.csproj.SuggestedBindingRedirects.cache
+C:\Users\gustavo.hcazevedo\source\repos\LittlesSoft\LittlesSoft\obj\Debug\LittlesSoft.Form1.resources
+C:\Users\gustavo.hcazevedo\source\repos\LittlesSoft\LittlesSoft\obj\Debug\LittlesSoft.Properties.Resources.resources
+C:\Users\gustavo.hcazevedo\source\repos\LittlesSoft\LittlesSoft\obj\Debug\LittlesSoft.csproj.GenerateResource.cache
+C:\Users\gustavo.hcazevedo\source\repos\LittlesSoft\LittlesSoft\obj\Debug\LittlesSoft.csproj.CoreCompileInputs.cache
+C:\Users\gustavo.hcazevedo\source\repos\LittlesSoft\LittlesSoft\obj\Debug\LittlesSoft.exe
+C:\Users\gustavo.hcazevedo\source\repos\LittlesSoft\LittlesSoft\obj\Debug\LittlesSoft.pdb
+C:\Users\gustavo.hcazevedo\source\repos\LittlesSoft\LittlesSoft\obj\Debug\LittlesSoft.Form2.resources
